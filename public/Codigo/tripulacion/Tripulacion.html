@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripulación - Aerolíneas Carrillo</title>
+    <link rel="stylesheet" href="TripulacionStyle.css">
+</head>
+<body>
+    <a href="../menuAdmin/MenuAdmin.html" class="volver">&#8592; Volver</a>
+
+    <h1>Lista de Tripulación</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Cargo</th>
+                <th>Horas de Vuelo</th>
+                <th>Nacionalidad</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se deben insertar los datos obtenidos desde la base de datos -->
+            <!-- Ejemplo -->
+            <tr>
+                <td>María López</td>
+                <td>34</td>
+                <td>Piloto</td>
+                <td>1500</td>
+                <td>México</td>
+                <td>
+                    <form method="POST" action="ruta-eliminar-tripulante.php">
+                        <!-- Cambia 'ruta-eliminar-tripulante.php' por tu archivo PHP -->
+                        <input type="hidden" name="nombre" value="María López">
+                        <button type="submit" class="eliminar">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Jorge Peña</td>
+                <td>29</td>
+                <td>Copiloto</td>
+                <td>850</td>
+                <td>Chile</td>
+                <td>
+                    <form method="POST" action="ruta-eliminar-tripulante.php">
+                        <input type="hidden" name="nombre" value="Jorge Peña">
+                        <button type="submit" class="eliminar">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario para agregar tripulación -->
+    <section class="formulario">
+        <h2>Agregar Nuevo Miembro</h2>
+        <form method="POST" action="ruta-agregar-tripulante.php">
+            <!-- Cambia 'ruta-agregar-tripulante.php' por tu archivo PHP -->
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="number" name="edad" placeholder="Edad" required>
+            <input type="text" name="cargo" placeholder="Cargo" required>
+            <input type="number" name="horas" placeholder="Horas de vuelo" required>
+            <input type="text" name="nacionalidad" placeholder="Nacionalidad" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+</body>
+</html>
+

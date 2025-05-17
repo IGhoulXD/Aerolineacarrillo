@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aerolíneas Carrillo</title>
+<link rel="stylesheet" href="ReservaStyle.css" />
+
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Aerolíneas Carrillo</div>
+    <nav class="nav">
+      <a href="#">Reserva</a>
+      <a href="#">Mi Vuelo</a>
+      <a href="#">Rastrear vuelo</a>
+    </nav>
+    <div class="greeting">Buenas tardes -------</div>
+  </header>
+
+  <main class="main-container">
+    <section class="search-box">
+      <p class="saludo">✈ ¡Buenas tardes!</p>
+      <h1>Busca tu vuelo</h1>
+
+      <div class="tabs">
+       <div class="tabs">
+
+
+
+        <!-- Datos del vuelo -->
+  <input type="radio" id="ida-vuelta" name="tipo-vuelo" checked />
+  <label for="ida-vuelta" class="tab-button">Ida y vuelta</label>
+
+  <input type="radio" id="sencillo" name="tipo-vuelo" />
+  <label for="sencillo" class="tab-button">Sencillo</label>
+
+  <input type="radio" id="multidestino" name="tipo-vuelo" />
+  <label for="multidestino" class="tab-button">Multidestino</label>
+</div>
+      </div>
+
+      <form>
+        <label>Origen</label>
+        <input type="text" placeholder="Ingresa tu ciudad de origen" />
+
+
+        <label>Destino</label>
+        <input type="text" placeholder="Escribe un destino" />
+
+        <label>Fechas</label>
+        <input type="text" placeholder="Salida – Regreso" />
+
+        <label>Pasajeros</label>
+        <select>
+          <option>1 adulto</option>
+          <option>2 adulto</option>
+          <option>1 adulto y 1 niño</option>
+          <option>2 adulto y 2 niños</option>
+        </select>
+
+        <div class="extras">
+          <label><input type="checkbox" /> Usar mis Puntos Rewards</label>
+        </div>
+
+        <button type="submit" class="search-btn" href="#">Buscar vuelo ✈</button>
+      </form>
+
+     <br>
+      <br><br>
+      <br><br>
+    </section>
+
+
+    <!--  -->
+    <section class="promo-box">
+      b
+      <h2>Checa primero nuestras ofertas y flexibilidad</h2>
+      <div class="promo-precios">
+        <div>
+          <p>Vuelos nacionales</p>
+          <strong>$2,548</strong><span> desde MXN</span>
+        </div>
+        <div>
+          <p>Vuelos internacionales</p>
+          <strong>$3,981</strong><span> desde MXN</span>
+        </div>
+      </div>
+      <button class="ver-ofertas">Ver ofertas</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">Aerolíneas Carrillo</div>
+    <nav class="nav">
+      <a href="#">Reserva</a>
+      <a href="#">Mi Vuelo</a>
+      <a href="#">Rastrear vuelo</a>
+    </nav>
+    <div class="greeting">Buenas tarde -------</div>
+  </footer>
+</body>
+</html>
+
+
+
+

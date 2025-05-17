@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Comidas</title>
+    <link rel="stylesheet" href="ComidaStyle.css">
+</head>
+<body>
+    <a href="../menuAdmin/MenuAdmin.html" class="volver">&#8592; Volver</a>
+
+    <h1>Gestión de Comidas a Bordo</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí debes generar las filas dinámicamente desde la base de datos -->
+            <!-- Ejemplo estático: -->
+            <tr>
+                <td>Sandwich</td>
+                <td>
+                    <form method="POST" action="ruta-actualizar-comida.php">
+                        <!-- Aquí se actualiza la cantidad directamente -->
+                        <input type="hidden" name="nombre" value="Sandwich">
+                        <input type="number" name="cantidad" value="120" min="0" onchange="this.form.submit()">
+                    </form>
+                </td>
+                <td>
+                    <form method="POST" action="ruta-eliminar-comida.php">
+                        <input type="hidden" name="nombre" value="Sandwich">
+                        <button type="submit" class="eliminar">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario para agregar una nueva comida -->
+    <section class="formulario">
+        <h2>Agregar Nueva Comida</h2>
+        <form method="POST" action="ruta-agregar-comida.php">
+            <!-- Cambia el action al archivo de backend correspondiente -->
+            <input type="text" name="nombre" placeholder="Nombre de comida" required>
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+</body>
+</html>

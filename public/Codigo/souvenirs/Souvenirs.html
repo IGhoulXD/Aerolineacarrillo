@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Souvenirs - Aerolíneas Carrillo</title>
+    <link rel="stylesheet" href="SouvenirsStyle.css">
+</head>
+<body>
+    <a href="../menuAdmin/MenuAdmin.html" class="volver">&#8592; Volver</a>
+
+    <h1>Listado de Souvenirs</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se deben insertar dinámicamente los datos desde la base de datos -->
+            <!-- Ejemplo estático -->
+            <tr>
+                <td>SV001</td>
+                <td>Llavero Avión</td>
+                <td>$5.00</td>
+                <td>
+                    <form method="POST" action="ruta-eliminar-souvenir.php">
+                        <!-- Reemplaza  -->
+                        <input type="hidden" name="id" value="SV001">
+                        <button type="submit" class="eliminar">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario para agregar souvenirs -->
+    <section class="formulario">
+        <h2>Agregar Nuevo Souvenir</h2>
+        <form method="POST" action="php de souvenirs">
+            <!-- Cambia el action por tu archivo PHP real -->
+           
+            <input type="text" name="nombre" placeholder="Nombre del Souvenir" required>
+            <input type="number" step="0.01" name="precio" placeholder="Precio" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Equipaje - Aerolíneas Carrillo</title>
+    <link rel="stylesheet" href="EquipajeStyle.css">
+</head>
+<body>
+    <a href="../menuAdmin/MenuAdmin.html" class="volver">&#8592; Volver</a>
+
+    <h1>Listado de Equipaje</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID Equipaje</th>
+                <th>Numero de vuelo</th>
+                <th>Pasajero</th>
+                <th>Peso (kg)</th>
+                <th>Destino</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se deben insertar dinámicamente los datos de equipaje desde la base de datos -->
+           
+            <!-- Ejemplo  -->
+            <tr>
+                <td>EQ001</td>
+                <td>V003</td>
+                <td>Ana Torres</td>
+                <td>23</td>
+                <td>Londres</td>
+                <td>
+                    <form method="POST" action="Aqui va la base de datos">
+                        <!-- Sustituye por el ID real  -->
+                        <input type="hidden" name="id_equipaje" value="EQ001">
+                        <button type="submit" class="eliminar">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario para agregar equipaje -->
+    <section class="formulario">
+        <h2>Agregar Nuevo Equipaje</h2>
+        <form method="POST" action="ruta-agregar-equipaje.php">
+            <!-- Cambia el action por tu archivo PHP real -->
+            
+            <input type="text" name="pasajero" placeholder="Nombre del Pasajero" required>
+            <input type="number" name="peso" placeholder="Peso (kg)" step="0.1" required>
+            <input type="text" name="destino" placeholder="Destino" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+</body>
+</html>

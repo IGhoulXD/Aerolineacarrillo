@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #1d1d1d;
+}
+
+.header, .footer {
+  background: #0033a0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.search-box {
+  width: 40%;
+  background: #f7f7f7;
+  padding: 30px;
+}
+
+.search-box h1 {
+  margin: 10px 0;
+}
+
+.tabs {
+  margin: 15px 0;
+}
+
+.tabs button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tabs .active {
+  background: #007bff;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  margin-top: 20px;
+  background: gray;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.aplicar-cupon {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.promo-box {
+  width: 60%;
+  background: url('https://humanidades.com/wp-content/uploads/2017/03/ciudad-3-e1565900111723.jpg') center/cover no-repeat;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.promo-precios {
+  display: flex;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.promo-precios strong {
+  font-size: 30px;
+  display: block;
+}
+
+.ver-ofertas {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #ff007f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+}

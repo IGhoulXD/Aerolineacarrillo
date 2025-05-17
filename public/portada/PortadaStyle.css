@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-size: x-large;
+  }
+  
+  body {
+    background-image:  url('https://st1.uvnimg.com/dims4/default/a9886e2/2147483647/thumbnail/400x225/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fi%2Fislandia-abrira-turismo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    
+  }
+  body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+}
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .logo {
+    font-style: italic;
+  }
+  
+  .user-icon {
+    font-size: 2rem;
+  }
+  
+  .hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #0057ff;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0042c8;
+  }
+  .promo-section {
+  background-color: #f5f9fc;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* */
+.promo-content {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-text {
+  max-width: 400px;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.promo-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.promo-text .nota {
+  font-size: 0.75rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.promo-box {
+  background-color: #1f70ff;
+  padding: 30px 40px;
+  color: white;
+  border-radius: 6px;
+}
+
+.promo-box ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.promo-box li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+
+
+/* Destinos*/
+.destinos {
+  background-color: #f5f9fc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.destinos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: black; 
+}
+
+.destinos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.destino {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.destino:hover {
+  transform: scale(1.05);
+}
+
+
+.destinos-grid div:nth-child(1) {
+  background-image: url('https://concepto.de/wp-content/uploads/2020/03/muralla-china-scaled-e1732066812429.jpg'); /* FOTO 1 */
+}
+
+.destinos-grid div:nth-child(2) {
+  background-image: url('https://www.westernunion.com/blogs-staticassets/R24-12.02.0/media/Los_5_mejores_paises_para_visitar_en_Latinoamerica.jpg'); /* FOTO 2 */
+}
+
+.destinos-grid div:nth-child(3) {
+  background-image: url('https://www.cronista.com/files/image/476/476135/630fd80c7afa9.jpg'); /* FOTO 3 */
+}
+
+
+
+
+
+
+
+.testimonios {
+  background-color: #f5f9fc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.quote {
+  font-size: 2.5rem;
+  color: #0057ff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card p {
+  margin-top: 40px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usuario img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.usuario .info {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.usuario .info span {
+  color: #555;
+}
+.foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.foto1 {
+  background-image: url('https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D'); /* ← pegá acá la imagen de Brenda */
+}
+
+.foto2 {
+  background-image: url('https://secrecyjewels.es/blog/wp-content/uploads/2022/10/esencia-de-una-persona.jpg'); /* ← pegá acá la imagen de Sara */
+}
+
+.foto3 {
+  background-image: url('https://media.istockphoto.com/id/1090878494/es/foto/retrato-de-joven-sonriente-a-hombre-guapo-en-camiseta-polo-azul-aislado-sobre-fondo-gris-de.jpg?s=612x612&w=0&k=20&c=dHFsDEJSZ1kuSO4wTDAEaGOJEF-HuToZ6Gt-E2odc6U='); /* ← pegá acá la imagen de Lucas */
+}
+
+
+
+
+
+.destacado {
+  position: relative;
+  background-image: url('https://media.timeout.com/images/105280444/image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 40px;
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;   
+  text-align: center;        
+  gap: 20px;
+}
+.btn-destacado {
+  display: inline-block;
+  background-color: #0057ff;
+  color: white;
+  font-weight: bold;
+  padding: 15px 40px; 
+  border-radius: 999px; 
+  text-decoration: none;
+  transition: background 0.3s;
+  font-size: 1rem;
+}

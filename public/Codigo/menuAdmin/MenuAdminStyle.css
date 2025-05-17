@@ -1,0 +1,114 @@
+.personal {
+    background-image: url("https://st3.depositphotos.com/6456500/12560/i/450/depositphotos_125609626-stock-photo-airport-workers-with-airplane-on.jpg"); /* <-- Imagen de Personal */
+}
+
+.comida {
+    background-image: url("https://th.bing.com/th/id/R.3fd6d228c837f12e9db7e291260c5f56?rik=lX6mMb4v9zmPwg&pid=ImgRaw&r=0"); /* <-- Imagen de Comida */
+}
+
+.equipaje {
+    background-image: url("https://th.bing.com/th/id/OIP.QBSA0jxWUC04mG2mMxYRLgHaFW?rs=1&pid=ImgDetMain"); /* <-- Imagen de Equipaje */
+}
+
+.souvenirs {
+    background-image: url("https://th.bing.com/th/id/OIP.l3s_QujhXnQOBmlFJ-phpQHaFo?rs=1&pid=ImgDetMain"); /* <-- Imagen de Souvenirs */
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4acbdc, #0052a0);
+    color: white;
+}
+
+header h1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #003f7f;
+    margin: 0;
+}
+
+.empresa {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.saludo {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contenedor {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px; 
+    padding: 50px; 
+    justify-items: center;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 350px;  
+    height: 210px; 
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opcion:hover {
+    transform: scale(1.05); /* Aumenta tamaño 5% */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+
+.opcion span {
+    font-size: 24px;
+    font-weight: bold;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.texto-personal {
+    color: #1500ff; 
+}
+
+.texto-comida {
+    color: #fff700; 
+}
+
+.texto-equipaje {
+    color: #c800ff; 
+}
+
+.texto-souvenirs {
+    color: #ff0000; 
+}
+
+.volver {
+ 
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 72, 255);
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.volver:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+

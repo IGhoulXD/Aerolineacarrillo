@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aerolíneas Carrillo - Vuelo de salida</title>
+  <link rel="stylesheet" href="VueloStyles.css">
+  
+  <script>
+    function updatePrice(selectElement, flightId) {
+      const priceDisplay = document.getElementById('price-' + flightId);
+      const selectedOption = selectElement.options[selectElement.selectedIndex];
+      priceDisplay.textContent = selectedOption.value;
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <span>Aerolíneas Carrillo</span>
+      <div class="menu">
+        <a href="#">Reserva</a>
+        <a href="#">Mi Vuelo</a>
+        <a href="#">Rastrear vuelo</a>
+      </div>
+    </div>
+    <div class="right">
+      Buenas tarde ------
+    </div>
+  </nav>
+
+  <section class="header">
+    <h2>Elige tu vuelo de salida <span style="color: gray">BJX - MTY</span></h2>
+    <p>León, El Bajío a Monterrey &nbsp;|&nbsp; 13 may.</p>
+  </section>
+
+  <div class="info-bar">
+    Aviso importante: Todas las tarifas incluyen 1 equipaje de mano y 1 artículo personal, en caso de exceder el número de piezas permitidas, podrán aplicar cargos en aeropuerto.
+  </div>
+
+  <section class="flight-selector">
+    <div class="flight">
+      <div class="flight-info">
+        <span><strong>12:56</strong> BJX &nbsp;&nbsp;→&nbsp;&nbsp; <strong>16:53</strong> MTY</span>
+        <span>1 escala, 3h 57m</span>
+        <span>Operado por Grupo Aeronáutico</span>
+        <span>Conexión en MEX</span>
+      </div>
+      <div class="price-box">
+        <select onchange="updatePrice(this, '1')">
+          <option value="$1,489 MXN">Económico - $1,489 MXN</option>
+          <option value="$2,999 MXN">Primera Clase - $2,999 MXN</option>
+        </select>
+        <div id="price-1" class="price">$1,489 MXN</div>
+      </div>
+    </div>
+
+    <div class="flight">
+      <div class="flight-info">
+        <span><strong>17:16</strong> BJX &nbsp;&nbsp;→&nbsp;&nbsp; <strong>21:19</strong> MTY</span>
+        <span>1 escala, 4h 3m</span>
+        <span>Operado por Grupo Aeronáutico</span>
+        <span>Conexión en MEX</span>
+      </div>
+      <div class="price-box">
+        <select onchange="updatePrice(this, '2')">
+          <option value="$2,209 MXN">Económico - $2,209 MXN</option>
+          <option value="$3,499 MXN">Primera Clase - $3,499 MXN</option>
+        </select>
+        <div id="price-2" class="price">$2,209 MXN</div>
+      </div>
+    </div>
+
+    <div class="flight">
+      <div class="flight-info">
+        <span><strong>15:51</strong> BJX &nbsp;&nbsp;→&nbsp;&nbsp; <strong>19:55</strong> MTY</span>
+        <span>1 escala, 4h 4m</span>
+        <span>Operado por Grupo Aeronáutico</span>
+        <span>Conexión en MEX</span>
+      </div>
+      <div class="price-box">
+        <select onchange="updatePrice(this, '3')">
+          <option value="$2,951 MXN">Económico - $2,951 MXN</option>
+          <option value="$3,899 MXN">Primera Clase - $3,899 MXN</option>
+        </select>
+        <div id="price-3" class="price">$2,951 MXN</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
